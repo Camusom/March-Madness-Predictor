@@ -96,14 +96,13 @@ python predict.py
 Enter any two team names and the script generates a predicted margin of
 victory with key matchup factor breakdowns.
 
-Model Performance
+## Model Performance
 
-- Metric	Value
-- Validation MAE	~8.8 points
-- Tournament directional accuracy	68.3% (63 games)
-- Round of 64 accuracy	78.1% (32 games)
+- Validation MAE:	~8.8 points
+- Tournament directional accuracy:	68.3% (63 games)
+- Round of 64 accuracy:	78.1% (32 games)
 
-Notable calls:
+## Notable calls:
 
 - Texas over Gonzaga — model: Texas -9.8, Vegas: Gonzaga -6.5, Actual: Texas -6
 - Illinois over Houston — model: Illinois -8.2, Vegas: Houston -2.5, Actual: Illinois -10
@@ -113,7 +112,7 @@ Notable calls:
 coaching systems and tournament experience (see: UConn, 4/4 beating model
 favorites all tournament). These factors don't appear in box score data.
 
-What's Next
+## What's Next
 
 - Adapting this for NBA playoffs with additional features:
 - Coaching tenure / playoff record
