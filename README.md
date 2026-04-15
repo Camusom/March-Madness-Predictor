@@ -10,15 +10,15 @@ a positive value means team A wins, negative means team B wins.
 
 ### Features (all computed as team A minus team B differentials)
 
-OffRtg_diff (Offensive rating differential)
-DefRtg_diff (Defensive rating differential) 
-ThreePA_diff (Three point attempts differential) 
-TOV_diff (Turnover differential) 
-ORB_diff (Offensive rebound differential)
-DRB_diff (Defensive rebound differential)
-RecentForm_diff (Rolling 5-game MOV average differential)
-SOS_diff (Strength of schedule differential)
-Pace_diff (Pace of play differential)
+- OffRtg_diff (Offensive rating differential)
+- DefRtg_diff (Defensive rating differential) 
+- ThreePA_diff (Three point attempts differential) 
+- TOV_diff (Turnover differential) 
+- ORB_diff (Offensive rebound differential)
+- DRB_diff (Defensive rebound differential)
+- RecentForm_diff (Rolling 5-game MOV average differential)
+- SOS_diff (Strength of schedule differential)
+- Pace_diff (Pace of play differential)
 
 SOS ended up being the strongest single predictor. When OffRtg and DefRtg 
 both strongly favor one team by roughly equal magnitudes, the model's 
@@ -37,16 +37,17 @@ TeamRankings, then merged and cleaned via the data pipeline.
 ---
 
 ## Project Files
-data_cleaning.py # Full data pipeline (clean, merge, roll, split)
-modeling.py # XGBoost training with Optuna optimization, generate predictions here
-data1.csv # Raw Stathead export
-teamrankings_SOS_raw.csv # Raw SOS from TeamRankings
-teamrankings_Pace_raw.csv # Raw Pace from TeamRankings
-stathead_cleaned.csv # Cleaned game logs
-supplements_cleaned.csv # Cleaned SOS + Pace
-games_rolling.csv # Rolling features per team
-train.csv # Regular season training data
-val.csv # Conference tournament validation
+
+- data_cleaning.py # Full data pipeline (clean, merge, roll, split)
+- modeling.py # XGBoost training with Optuna optimization, generate predictions here
+- data1.csv # Raw Stathead export
+- teamrankings_SOS_raw.csv # Raw SOS from TeamRankings
+- teamrankings_Pace_raw.csv # Raw Pace from TeamRankings
+- stathead_cleaned.csv # Cleaned game logs
+- supplements_cleaned.csv # Cleaned SOS + Pace
+- games_rolling.csv # Rolling features per team
+- train.csv # Regular season training data
+- val.csv # Conference tournament validation
 
 
 
