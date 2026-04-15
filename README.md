@@ -38,8 +38,9 @@ TeamRankings, then merged and cleaned via the data pipeline.
 
 ## Project Files
 
-- data_cleaning.py # Full data pipeline (clean, merge, roll, split)
-- modeling.py # XGBoost training with Optuna optimization, generate predictions here
+- data scraper march madness.py # Scrapes raw data from stathead and teamrankings
+- data_cleaning script.py # Full data pipeline (clean, merge, roll, split)
+- model.py # XGBoost training with Optuna optimization, generate predictions here
 - data1.csv # Raw Stathead export
 - teamrankings_SOS_raw.csv # Raw SOS from TeamRankings
 - teamrankings_Pace_raw.csv # Raw Pace from TeamRankings
@@ -48,6 +49,7 @@ TeamRankings, then merged and cleaned via the data pipeline.
 - games_rolling.csv # Rolling features per team
 - train.csv # Regular season training data
 - val.csv # Conference tournament validation
+- xgb_model.pkl # Trained model object
 
 
 
