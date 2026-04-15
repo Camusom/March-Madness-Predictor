@@ -97,30 +97,32 @@ Enter any two team names and the script generates a predicted margin of
 victory with key matchup factor breakdowns.
 
 Model Performance
-Metric	Value
-Validation MAE	~8.8 points
-Tournament directional accuracy	68.3% (63 games)
-Round of 64 accuracy	78.1% (32 games)
+
+- Metric	Value
+- Validation MAE	~8.8 points
+- Tournament directional accuracy	68.3% (63 games)
+- Round of 64 accuracy	78.1% (32 games)
 
 Notable calls:
-Texas over Gonzaga — model: Texas -9.8, Vegas: Gonzaga -6.5, Actual: Texas -6
-Illinois over Houston — model: Illinois -8.2, Vegas: Houston -2.5, Actual: Illinois -10
-Iowa over Nebraska — model: Iowa -6.2, Vegas: Nebraska -1.5, Actual: Iowa -6 (exact)
-Michigan over Tennessee — model: Michigan -12.1, Vegas: Michigan -7.5, Actual: Michigan -33
-Known limitation: The model structurally undervalues teams with elite
+
+- Texas over Gonzaga — model: Texas -9.8, Vegas: Gonzaga -6.5, Actual: Texas -6
+- Illinois over Houston — model: Illinois -8.2, Vegas: Houston -2.5, Actual: Illinois -10
+- Iowa over Nebraska — model: Iowa -6.2, Vegas: Nebraska -1.5, Actual: Iowa -6 (exact)
+- Michigan over Tennessee — model: Michigan -12.1, Vegas: Michigan -7.5, Actual: Michigan -33
+- Known limitation: The model structurally undervalues teams with elite
 coaching systems and tournament experience (see: UConn, 4/4 beating model
 favorites all tournament). These factors don't appear in box score data.
 
 What's Next
-Adapting this for NBA playoffs with additional features:
 
-Coaching tenure / playoff record
-Player availability / injury flags
-Rest day differentials
-Series momentum
-Home court advantage
-Built With
-Python · XGBoost · Optuna · Pandas · NumPy · Scikit-learn
+- Adapting this for NBA playoffs with additional features:
+- Coaching tenure / playoff record
+- Player availability / injury flags
+- Rest day differentials
+- Series momentum
+- Home court advantage
+- Built With
+- Python · XGBoost · Optuna · Pandas · NumPy · Scikit-learn
 
 Data is manually collected from public sources. This project is for
 educational purposes only.
